@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/btnCamera"
+    android:background="@drawable/rounded_dialog">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_4sdp"
+        android:background="@drawable/box4"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_25sdp"/>
+
+    <TextView
+        android:id="@+id/txtThisappcanonlyaccessPhotoSelected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This app can only access the photos that you select"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_9ssp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_marginHorizontal="@dimen/_10sdp">
+
+        <ImageView
+            android:id="@+id/imgCross"
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:layout_gravity="center"
+            android:src="@drawable/cross"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/lnrCameraa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/box4"
+                android:layout_marginHorizontal="@dimen/_5sdp"
+                android:backgroundTint="#284BC4">
+
+                <TextView
+                    android:id="@+id/txtPhotos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Photos"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_8ssp"
+                    android:layout_marginHorizontal="@dimen/_20sdp"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnrAlbums"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/box4"
+                android:backgroundTint="@color/black"
+                android:layout_marginHorizontal="@dimen/_5sdp">
+
+                <TextView
+                    android:id="@+id/txtAlbums"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="@dimen/_20sdp"
+                    android:text="Albums"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_8ssp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:layout_gravity="center"
+            android:src="@drawable/more"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtRecent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recent"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:textColor="@color/white"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:textSize="@dimen/_15ssp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

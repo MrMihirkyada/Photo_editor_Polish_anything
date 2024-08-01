@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/black">
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_25sdp"
+        android:layout_marginVertical="@dimen/_10sdp"
+        android:background="@color/black"
+        android:scrollIndicators="right"
+        app:tabBackground="@drawable/store_tab_background_selector"
+        app:tabGravity="start"
+        app:tabIndicator="@drawable/tabs_indicator"
+        app:tabIndicatorAnimationMode="elastic"
+        app:tabIndicatorColor="@color/blue"
+        app:tabInlineLabel="true"
+        app:tabMode="scrollable"
+        app:tabPaddingEnd="@dimen/_15sdp"
+        app:tabPaddingStart="@dimen/_15sdp"
+        app:tabRippleColor="@color/lightgrey"
+        app:tabSelectedTextColor="@color/white"
+        app:tabTextAppearance="@style/CustomTabTextStyle"
+        app:tabTextColor="@color/white"
+        app:tabUnboundedRipple="true"/>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_weight="1"/>
+
+</LinearLayout>
